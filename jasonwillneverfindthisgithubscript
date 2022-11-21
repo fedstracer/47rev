@@ -1,0 +1,68 @@
+--[[
+Leaked by chickenmuncher#0001 and 1900#9999 discord already changed
+
+
+]]
+getgenv().DemiseSettings = {
+    Enbaled = true,
+    Show_Fov =false,
+    existence_Check =true,
+    K_O_Check = true,
+    PickUp_Check = true,
+    Friends_Whitelist = false,
+    Crew_Whitelist = false,
+    Auto_prediction = true,
+    Fov_Filled = false,
+    Nearest_Cursor_Hitbox = true,
+    Predict_Range =false,
+    Custom_Prediction = true,
+    Auto_Change_Fov = true,
+    UseDahoodHitparts = false,
+    NearestCusorHitboxPrediction = 0.12654443,
+    NearCursurHitbox = 0.2,
+    HitChance = 100,
+    Prediction = 0.102421,
+    HitParts = {
+        "Head",
+        "LeftHand",
+        "RightHand",
+        "LeftLowerArm",
+        "RightLowerArm",
+        "LeftUpperArm",
+        "RightUpperArm",
+        "LeftFoot",
+        "LeftLowerLeg",
+        "UpperTorso",
+        "LeftUpperLeg",
+        "RightLowerLeg",
+        "RightFoot",
+        "LowerTorso"
+    }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RustW/remakebcpastebinsucks/main/aa"))()
+DaHoodSettings.Prediction = 0.1437
+Aiming.TargetPart = {"Head", "UpperTorso", "LowerTorso", "HumanoidRootPart", "RightFoot", "LeftFoot"}
+Aiming.FOV = 9.4
+Aiming.FOVSides = 25
+Aiming.HitChance = 110
+Aiming.ShowFOV = false
+
+ getgenv().AimlockKey = "c"
+ getgenv().AimPart = "UpperTorso"
+ getgenv().PredictionVelocity = 40
+ getgenv().SmoothessAmount = 0.001027777777
+
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+
+mouse.KeyDown:Connect(function(key)
+    if key == "v" then
+        if Aiming.Enabled == false then
+        Aiming.Enabled = true
+        else
+        Aiming.Enabled = false
+        end
+    end
+end)
